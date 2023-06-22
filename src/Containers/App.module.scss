@@ -2,6 +2,7 @@
 @import '../Style/normalize';
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap');
 
+
 .app {
     width: 1440px;
     font-family: 'Roboto', sans-serif;
@@ -10,3 +11,39 @@
     align-items: center;
     margin: 0 auto;
 }
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    .app {
+        width: 576px;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .app {
+        width: 768px;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .app {
+        width: 992px;
+    }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    .app {
+        width: 1200px;
+    }
+}
+
+// // XX-Large devices (larger desktops, 1400px and up)
+// @media (min-width: 1400px) {
+//     .app {
+//         width: 1440px;
+//     }
+// }

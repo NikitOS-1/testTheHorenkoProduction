@@ -1,0 +1,44 @@
+.burger-menu,
+.burger-menu.open {
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.burger-menu .bar1,
+.bar2,
+.bar3 {
+    width: 25px;
+    height: 3px;
+    background-color: #859BA6;
+    margin: 10px 0;
+    transition: 0.4s;
+}
+
+.burger-menu.open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-5px, 5px);
+    transform: rotate(-45deg) translate(-5px, 5px);
+}
+
+.burger-menu.open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-5px, -5px);
+    transform: rotate(45deg) translate(-4px, -4px);
+}
+
+Menu .menu {
+    width: 100%;
+    height: 100%;
+}
+
+.menu ul {}
+
+.menu li {}
+
+.menu li:hover {
+    color: #ff0000;
+}
+
+.popup-overlay {
+    margin-top: 90px;
+    width: 100%;
+
+}
