@@ -14,9 +14,10 @@
 
 
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {
+@media (max-width: 576px) {
     .app {
         width: 576px;
+        margin: 0 15px;
     }
 }
 

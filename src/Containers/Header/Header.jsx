@@ -7,13 +7,15 @@ import BtnCallBack from "../../Components/BtnCallBack/BtnCallBack";
 const Header = () => {
   return (
     <header className={style.header}>
-      <LogoCompany />
-      <Menu />
-      <div className={style.number}>
-        <p>0 (800) 00-00-00</p>
+      <LogoCompany className={style.logo} />
+      <div className={style.wrap}>
+        <Menu className={style.menu} />
+        <div className={style.number}>
+          <p>0 (800) 00-00-00</p>
+        </div>
+        <BtnCallBack className={style.callBack} />
+        <ToogleLanguage className={style.lang} />
       </div>
-      <BtnCallBack />
-      <ToogleLanguage />
     </header>
   );
 };

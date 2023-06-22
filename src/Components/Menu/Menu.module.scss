@@ -1,21 +1,33 @@
 menu {
-    ul {
-        display: flex;
+    .genMenu {
+        ul {
+            display: flex;
 
-        li {
-            margin: 0 20px;
-            font-size: 16px;
-            font-weight: 400;
-            cursor: pointer;
+            li {
+                margin: 0 20px;
+                font-size: 16px;
+                font-weight: 400;
+                cursor: pointer;
+            }
         }
+    }
+
+    .gamburgerMenu {
+        display: none;
     }
 }
 
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {
+@media (max-width: 576px) {
     menu {
-        ul {
-            li {}
+        .genMenu {
+            display: none;
+        }
+
+        .gamburgerMenu {
+            display: block;
+            width: 100%;
+            margin-left: 2rem;
         }
     }
 }
