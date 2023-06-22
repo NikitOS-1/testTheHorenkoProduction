@@ -11,6 +11,9 @@ export default ({ close }) => (
       <li>
         <p>0 (800) 00-00-00</p>
       </li>
+      <li>
+        <ToogleLanguage />
+      </li>
     </ul>
   </div>
 );
