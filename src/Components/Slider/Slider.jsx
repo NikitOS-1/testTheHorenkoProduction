@@ -20,6 +20,8 @@ export default function App() {
           "--swiper-navigation-color": "#fff",
           "--swiper-pagination-color": "#fff",
           width: "1320px",
+          height: "600px",
+          backgroundColor: "inherit",
         }}
         speed={600}
         parallax={true}
