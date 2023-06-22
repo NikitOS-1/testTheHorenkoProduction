@@ -33,17 +33,29 @@ menu {
 }
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {}
+@media (max-width: 768px) {
+    menu {
+        .genMenu {
+            display: none;
+        }
 
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) {}
+        .gamburgerMenu {
+            display: block;
+            width: 100%;
+            margin-left: 2rem;
+        }
+    }
+}
 
-// X-Large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {}
+@media (max-width: 1000px) {
+    menu {
+        .genMenu {
+            ul {
+                li {
+                    margin: 0 15px;
+                }
 
-// // XX-Large devices (larger desktops, 1400px and up)
-// @media (min-width: 1400px) {
-//     .app {
-//         width: 1440px;
-//     }
-// }
+            }
+        }
+    }
+}

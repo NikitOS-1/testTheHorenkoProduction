@@ -4,7 +4,7 @@
 
 
 .app {
-    width: 1440px;
+    max-width: 1440px;
     font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
@@ -13,38 +13,37 @@
 }
 
 
-// Small devices (landscape phones, 576px and up)
+// // Small devices (landscape phones, 576px and up)
 @media (max-width: 576px) {
     .app {
-        width: 576px;
         margin: 0 15px;
     }
 }
 
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
+// // Medium devices (tablets, 768px and up)
+@media (max-width: 768px) {
     .app {
-        width: 768px;
+        margin: 0 15px;
     }
 }
 
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
+// // Large devices (desktops, 992px and up)
+@media (max-width: 992px) {
     .app {
-        width: 992px;
+        margin: 0 15px;
     }
 }
 
-// X-Large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
+// // X-Large devices (large desktops, 1200px and up)
+@media (max-width: 1200px) {
     .app {
-        width: 1200px;
+        margin: 0 15px;
     }
 }
 
 // // XX-Large devices (larger desktops, 1400px and up)
-// @media (min-width: 1400px) {
-//     .app {
-//         width: 1440px;
-//     }
-// }
+@media (max-width: 1400px) {
+    .app {
+        margin: 0 15px;
+    }
+}
