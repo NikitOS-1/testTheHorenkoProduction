@@ -9,7 +9,9 @@ const Header = () => {
     <header className={style.header}>
       <LogoCompany />
       <Menu />
-      <div className={style.number}></div>
+      <div className={style.number}>
+        <p>0 (800) 00-00-00</p>
+      </div>
       <BtnCallBack />
       <ToogleLanguage />
     </header>

@@ -1,0 +1,17 @@
+.btnCallBack {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: #859BA6;
+    width: 140px;
+    height: 45px;
+    border: none;
+    cursor: pointer;
+
+    p {
+        font-size: 16px;
+        font-weight: 500;
+        color: white;
+    }
+}
