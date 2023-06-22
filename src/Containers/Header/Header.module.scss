@@ -11,23 +11,15 @@ header {
         align-items: center;
         justify-content: space-between;
         width: 80%;
-    }
 
-    .number {
-        font-size: 16px;
-        font-weight: 600;
+        .number {
+            font-size: 16px;
+            font-weight: 600;
+        }
     }
 }
 
-// .header{
-//     .logo{}
-//     .menu{}
-//     .number{}
-//     .callBack{}
-//     .lang{}
-// }
 
-// Small devices (landscape phones, 576px and up)
 @media (max-width: 576px) {
     .header {
         width: 100%;
@@ -41,9 +33,12 @@ header {
             .number {
                 display: none;
             }
+
+            .lang {
+                display: none;
+            }
         }
 
-        .logo {}
     }
 }
 
@@ -58,19 +53,8 @@ header {
             .number {
                 display: none;
             }
-        }
-    }
-}
 
-@media (max-width: 768px) {
-    .header {
-        width: 100%;
-
-        .wrap {
-
-            width: 300px;
-
-            .number {
+            .lang {
                 display: none;
             }
         }
@@ -82,10 +66,11 @@ header {
         width: 100%;
 
         .wrap {
-
-
-
             .number {
+                display: none;
+            }
+
+            .lang {
                 display: none;
             }
         }

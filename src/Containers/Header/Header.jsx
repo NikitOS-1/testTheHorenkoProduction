@@ -14,7 +14,9 @@ const Header = () => {
           <p>0 (800) 00-00-00</p>
         </div>
         <BtnCallBack className={style.callBack} />
-        <ToogleLanguage className={style.lang} />
+        <div className={style.lang}>
+          <ToogleLanguage />
+        </div>
       </div>
     </header>
   );
