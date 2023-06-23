@@ -4,7 +4,7 @@ import imgURL from "../../assets/MaestroProTransparent-1536x1209.png";
 const Slide = () => {
   return (
     <div className={style.container}>
-      <div className={style.wrap}>
+      <div className={style.wraper}>
         <div className={style.subtitle}>
           <h1>Meltem</h1>
           <p>

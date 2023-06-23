@@ -2,3 +2,9 @@
     width: 1440px;
     height: max-content;
 }
+
+@media screen and (min-width:1280px) and (max-width:1440px) {
+    .container {
+        width: 1280px;
+    }
+}
