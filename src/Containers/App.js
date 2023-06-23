@@ -1,7 +1,6 @@
 import style from "./App.module.scss";
 import Header from "./Header/Header";
 import Main from "./Main/Main";
-import Footer from "./Footer/Footer";
 import { useState } from "react";
 import Modal from "../Components/Modal/Modal";
 
@@ -18,7 +17,6 @@ const App = () => {
       <div className={style.modal}>
         <Modal isActive={isActive} setIsActive={setIsActive} />
       </div>
-      {/* <Footer /> */}
     </div>
   );
 };

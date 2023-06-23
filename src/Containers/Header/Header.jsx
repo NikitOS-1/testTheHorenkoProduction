@@ -6,7 +6,7 @@ import BtnCallBack from "../../Components/BtnCallBack/BtnCallBack";
 
 const Header = ({ setIsActive }) => {
   return (
-    <header className={style.header}>
+    <div className={style.container}>
       <LogoCompany className={style.logo} />
       <div className={style.wrap}>
         <Menu className={style.menu} />
@@ -18,7 +18,7 @@ const Header = ({ setIsActive }) => {
           <ToogleLanguage />
         </div>
       </div>
-    </header>
+    </div>
   );
 };
 export default Header;

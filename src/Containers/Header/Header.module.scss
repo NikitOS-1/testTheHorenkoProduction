@@ -1,9 +1,8 @@
-header {
+.container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 1320px;
-    margin: 0 40px;
+    min-width: 1440px;
     height: 90px;
 
     .wrap {
