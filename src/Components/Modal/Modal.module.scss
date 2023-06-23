@@ -1,13 +1,155 @@
 .container {
     z-index: 999999;
     position: absolute;
-    top: 130px;
+    top: 120px;
     width: 482px;
     height: 476px;
     border-radius: 5px;
     background-color: white;
-    // backdrop-filter: blur(2px);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 
+    .btnClose {
+        margin: 25px 25px 25px 432px;
+        // float: right;
+        width: 25px;
+        height: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .bar1 {
+            width: 30px;
+            height: 3px;
+            background-color: #859BA6;
+            margin: 5px;
+            transition: 0.4s;
+            -webkit-transform: rotate(-45deg) translate(-5px, 5px);
+            transform: rotate(-45deg) translate(-5px, 5px);
+        }
+
+        .bar2 {
+            width: 30px;
+            height: 3px;
+            background-color: #859BA6;
+            margin: 5px;
+            transition: 0.4s;
+            -webkit-transform: rotate(45deg) translate(-5px, -5px);
+            transform: rotate(45deg) translate(-4px, -4px);
+        }
+    }
+
+    .wrap {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        .title {
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 40px;
+
+            h1 {
+                font-size: 35px;
+                font-weight: 500;
+            }
+
+            p {
+                font-size: 16px;
+                font-weight: 400;
+            }
+        }
+
+        .form {
+            width: 362px;
+            height: 220px;
+
+            form {
+                width: 100%;
+                height: max-content;
+
+                .name {
+                    display: flex;
+                    width: 100%;
+                    height: 45px;
+                    border: 1px solid black;
+                    margin: 15px 0;
+                    border-radius: 5px;
+
+                    input {
+                        width: 80%;
+                        margin-left: 20px;
+                        border: none;
+
+                        &::placeholder {
+                            font-size: 16px;
+                            font-weight: 400;
+                        }
+
+                        &:focus-visible {
+                            outline: none;
+                        }
+                    }
+                }
+
+                .number {
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    height: 45px;
+                    border: 1px solid black;
+                    margin: 15px 0;
+                    border-radius: 5px;
+
+                    img {
+                        margin-left: 20px;
+                        width: 26px;
+                        height: 18px;
+                    }
+
+                    input {
+                        width: 80%;
+                        margin-left: 20px;
+                        border: none;
+
+                        &::placeholder {
+                            font-size: 16px;
+                            font-weight: 400;
+                        }
+
+                        &:focus-visible {
+                            outline: none;
+                        }
+                    }
+                }
+
+                .btnSent {
+                    width: 100%;
+                    height: 45px;
+                    background-color: #859BA6;
+                    color: white;
+                    border-radius: 5px;
+                    border: none;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: #859ba6b9;
+                    }
+                }
+            }
+
+            .accept {
+                margin-top: 20px;
+                font-size: 13px;
+                font-weight: 400;
+            }
+        }
+    }
 }
 
 .notActive {
