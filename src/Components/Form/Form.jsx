@@ -6,12 +6,11 @@ const Form = ({ isActive, setIsActive, setSend, send }) => {
   const [name, setName] = useState("");
   const [number, setNumber] = useState("");
   const [valid, setValid] = useState("true");
-  console.log(name);
-  console.log(number);
+
   const sendData = () => {
-    if (name == "" || name == " " || name == number) {
+    if (name == "" || name == " " || name === number) {
       setValid("false");
-    } else if (number == "" || number == " " || number == String) {
+    } else if (number == "" || number == " " || number === String) {
       setValid("false");
     } else {
       setValid("true");
