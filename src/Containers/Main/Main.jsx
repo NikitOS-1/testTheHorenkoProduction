@@ -4,7 +4,7 @@ import style from "./Main.module.scss";
 
 const Main = () => {
   return (
-    <main className={style.wrap}>
+    <main className={style.container}>
       <Slider />
     </main>
   );
