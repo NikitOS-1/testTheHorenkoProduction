@@ -21,9 +21,8 @@ header {
 
 
 @media (max-width: 576px) {
-    .header {
+    header {
         width: 100%;
-        margin: 0px;
 
         .wrap {
             flex-direction: row-reverse;

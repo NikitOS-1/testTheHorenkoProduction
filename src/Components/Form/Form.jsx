@@ -4,18 +4,19 @@ import flag from "../../assets/flagUA.png";
 
 const Form = ({ isActive, setIsActive, setSend, send }) => {
   const [name, setName] = useState("");
-  const [number, setNumber] = useState("");
+  const [numbers, setNumbers] = useState("");
   const [valid, setValid] = useState("true");
 
   const sendData = () => {
-    if (name == "" || name == " " || name === number) {
+    if (name == "" || name == " " || name == Number) {
       setValid("false");
-    } else if (number == "" || number == " " || number === String) {
+    } else if (numbers == "" || numbers == " " || numbers == String) {
       setValid("false");
     } else {
-      setValid("true");
       setSend("send");
       setIsActive("notActive");
+      setName("");
+      setNumbers("");
     }
   };
 
@@ -31,12 +32,13 @@ const Form = ({ isActive, setIsActive, setSend, send }) => {
               value={name}
             />
           </div>
-          <div className={[style[number], style[`${valid}`]].join(" ")}>
+          <div className={[style[numbers], style[`${valid}`]].join(" ")}>
             <img src={flag} alt="Flag" />
             <input
               type="text"
               placeholder="+380-00-000-00-00*"
-              onChange={(e) => setNumber(e.target.value)}
+              onChange={(e) => setNumbers(e.target.value)}
+              value={numbers}
             />
           </div>
           <button className={style.btnSent} onClick={() => sendData()}>
