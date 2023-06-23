@@ -1,0 +1,11 @@
+.wrap {
+    width: 1440px;
+    height: max-content;
+}
+
+@media (max-width: 1100px) {
+    .wrap {
+        width: 100%;
+        height: max-content;
+    }
+}
