@@ -19,7 +19,6 @@ menu {
     }
 }
 
-// Small devices (landscape phones, 576px and up)
 @media (max-width: 576px) {
     menu {
         .genMenu {
@@ -30,34 +29,6 @@ menu {
             display: block;
             width: 100%;
             margin-left: 2rem;
-        }
-    }
-}
-
-// Medium devices (tablets, 768px and up)
-@media (max-width: 768px) {
-    menu {
-        .genMenu {
-            display: none;
-        }
-
-        .gamburgerMenu {
-            display: block;
-            width: 100%;
-            margin-left: 2rem;
-        }
-    }
-}
-
-@media (max-width: 1000px) {
-    menu {
-        .genMenu {
-            ul {
-                li {
-                    margin: 0 15px;
-                }
-
-            }
         }
     }
 }

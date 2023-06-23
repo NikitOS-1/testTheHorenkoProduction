@@ -1,6 +1,6 @@
-import BtnCallBack from "../../BtnCallBack/BtnCallBack";
+import BtnCallBack from "../../Components/BtnCallBack/BtnCallBack";
 import style from "./Slide.module.scss";
-import imgURL from "../../../assets/MaestroProTransparent-1536x1209.png";
+import imgURL from "../../assets/MaestroProTransparent-1536x1209.png";
 
 const Slide = () => {
   return (

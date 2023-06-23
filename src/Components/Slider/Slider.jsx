@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper";
-import Slide from "./Slide/Slide";
+import Slide from "../../Pages/Slide/Slide";
 
 import "swiper/css";
 import "swiper/css/navigation";
