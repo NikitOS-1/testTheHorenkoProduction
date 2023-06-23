@@ -32,6 +32,24 @@
                 line-height: 1.5rem;
                 color: #333333;
             }
+
+            .btnProduct {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 5px;
+                background-color: #859BA6;
+                width: 140px;
+                height: 45px;
+                border: none;
+                cursor: pointer;
+
+                p {
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: white;
+                }
+            }
         }
 
         .image {
@@ -54,6 +72,26 @@
             h3 {
                 margin: 15px 0;
                 font-weight: 500;
+            }
+
+            .btnDescr {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 5px;
+                color: #859BA6;
+                background-color: none;
+                width: 140px;
+                height: 45px;
+                border: none;
+                cursor: pointer;
+                border: 1px solid #859BA6;
+
+                p {
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: #859BA6;
+                }
             }
         }
     }
@@ -116,25 +154,6 @@
                 h3 {
                     margin: 15px 0;
                     font-weight: 400;
-                }
-
-                .btn-product {
-
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    border-radius: 5px;
-                    background-color: #859BA6;
-                    width: 140px;
-                    height: 45px;
-                    border: none;
-                    cursor: pointer;
-
-                    p {
-                        font-size: 16px;
-                        font-weight: 500;
-                        color: white;
-                    }
                 }
             }
         }

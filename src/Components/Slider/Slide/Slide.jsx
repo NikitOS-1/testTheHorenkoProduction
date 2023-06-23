@@ -1,27 +1,29 @@
 import BtnCallBack from "../../BtnCallBack/BtnCallBack";
-import "./Slide.scss";
+import style from "./Slide.module.scss";
 import imgURL from "../../../assets/MaestroProTransparent-1536x1209.png";
 
 const Slide = () => {
   return (
-    <div className="container">
-      <div className="wrap">
-        <div className="subtitle">
+    <div className={style.container}>
+      <div className={style.wrap}>
+        <div className={style.subtitle}>
           <h1>Meltem</h1>
           <p>
             Meltem – це гарантовано якісне вентиляційне обладнання від
             німецького заводу.
           </p>
-          <BtnCallBack />
+          <div className={style.btnProduct}>
+            <p>Продукція</p>
+          </div>
         </div>
-        <div className="image">
+        <div className={style.image}>
           <img src={imgURL} alt="product" />
         </div>
-        <div className="title">
+        <div className={style.title}>
           <p>Відцентровий витяжний вентилятор</p>
           <h3>Meltem V-II 30-N</h3>
-          <div className="btn-product">
-            <p>Продукція</p>
+          <div className={style.btnDescr}>
+            <p>Детальніше</p>
           </div>
         </div>
       </div>
