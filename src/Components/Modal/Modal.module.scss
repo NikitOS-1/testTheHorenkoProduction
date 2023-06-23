@@ -1,0 +1,20 @@
+.container {
+    z-index: 999999;
+    position: absolute;
+    top: 130px;
+    width: 482px;
+    height: 476px;
+    border-radius: 5px;
+    background-color: white;
+    // backdrop-filter: blur(2px);
+
+}
+
+.notActive {
+    display: none;
+}
+
+.action {
+    display: block;
+
+}

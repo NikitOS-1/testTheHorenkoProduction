@@ -4,7 +4,7 @@ import ToogleLanguage from "../../Components/ToogleLanguage/ToogleLanguage";
 import LogoCompany from "../../Components/LogoCompany/LogoCompany";
 import BtnCallBack from "../../Components/BtnCallBack/BtnCallBack";
 
-const Header = () => {
+const Header = ({ setIsActive }) => {
   return (
     <header className={style.header}>
       <LogoCompany className={style.logo} />
@@ -13,7 +13,7 @@ const Header = () => {
         <div className={style.number}>
           <p>0 (800) 00-00-00</p>
         </div>
-        <BtnCallBack className={style.callBack} />
+        <BtnCallBack className={style.callBack} setIsActive={setIsActive} />
         <div className={style.lang}>
           <ToogleLanguage />
         </div>
