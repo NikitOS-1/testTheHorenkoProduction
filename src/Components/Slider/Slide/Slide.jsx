@@ -20,7 +20,9 @@ const Slide = () => {
         <div className="title">
           <p>Відцентровий витяжний вентилятор</p>
           <h3>Meltem V-II 30-N</h3>
-          <BtnCallBack />
+          <div className="btn-product">
+            <p>Продукція</p>
+          </div>
         </div>
       </div>
     </div>
