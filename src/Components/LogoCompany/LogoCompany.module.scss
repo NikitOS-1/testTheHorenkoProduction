@@ -1,1 +1,15 @@
-.logo {}
+.logo {
+    svg {
+        width: 146px;
+        height: 30px;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:500px) {
+    .logo {
+        svg {
+            width: 91px;
+            height: 18px;
+        }
+    }
+}
