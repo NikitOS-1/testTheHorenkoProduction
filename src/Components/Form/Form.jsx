@@ -6,11 +6,11 @@ const Form = ({ isActive, setIsActive, setSend, send }) => {
   const [name, setName] = useState("");
   const [numbers, setNumbers] = useState("");
   const [valid, setValid] = useState("true");
-
+  console.log(numbers);
   const sendData = () => {
-    if (name == "" || name == " " || name == Number) {
+    if (!name) {
       setValid("false");
-    } else if (numbers == "" || numbers == " " || numbers == String) {
+    } else if (!numbers) {
       setValid("false");
     } else {
       setSend("send");
@@ -35,13 +35,13 @@ const Form = ({ isActive, setIsActive, setSend, send }) => {
           <div className={[style[numbers], style[`${valid}`]].join(" ")}>
             <img src={flag} alt="Flag" />
             <input
-              type="text"
+              type="number"
               placeholder="+380-00-000-00-00*"
               onChange={(e) => setNumbers(e.target.value)}
               value={numbers}
             />
           </div>
-          <button className={style.btnSent} onClick={() => sendData()}>
+          <button className={style.btnSent} onClick={sendData}>
             Відправить
           </button>
         </form>
