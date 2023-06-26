@@ -56,19 +56,17 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            margin: 0 20px;
+            margin: 0 10px;
             height: 90px;
-
-            // .logo {
-    //     width: 91px;
-    //     height: 18px;
-    // }
 
             .wrap {
                 width: 100%;
                 display: flex;
                 align-items: center;
+                flex-direction: row-reverse;
                 justify-content: space-between;
+
+                .menu {}
 
                 .number {
                     display: none;
